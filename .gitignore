@@ -1,2 +1,9 @@
 themes/portfolio-theme/node_modules
 themes/portfolio-theme/bower_components
+wp-admin
+readme.html
+license.txt
+index.php
+wp-includes
+wp*.php
+xmlrpc.php
