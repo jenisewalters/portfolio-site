@@ -1,5 +1,5 @@
 
-* Homepage: [http://iamjenise.com/](http://iamjenise.com)
+* [Portfolio Site](http://iamjenise.com)
 
 
 
