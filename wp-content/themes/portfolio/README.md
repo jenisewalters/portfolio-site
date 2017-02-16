@@ -5,8 +5,8 @@ This theme is a resume portfolio built using the Sage Starter Theme
 
 
 ## Features
-Portfolio Custom Post Type 
-Displays Portfolio Tags
-Custom Field for WorkSample Url
-BEM Sass Naming Convention [http://getbem.com/naming/](http://getbem.com/naming/)
+*Portfolio Custom Post Type 
+*Displays Portfolio Tags
+*Custom Field for WorkSample Url
+*BEM Sass Naming Convention [http://getbem.com/naming/](http://getbem.com/naming/)
 
