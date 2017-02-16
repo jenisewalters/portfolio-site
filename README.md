@@ -1,14 +1,13 @@
 This theme is a resume portfolio built using the Sage Starter Theme
-* Source: [https://github.com/roots/sage](https://github.com/roots/sage)
-* Homepage: [https://roots.io/sage/](https://roots.io/sage/)
+* Homepage: [http://iamjenise.com/](http://iamjenise.com/)
 
 
 
 ## Features
 
-* __Portfolio Custom Post Type __
+* __Portfolio Custom Post Type__
 
-	Place them in your code to execute events. Unlike several other packages, these Hooks allow interacting with the data and can hold the scope of the class.
+
 * __Displays Portfolio Tags__
 
 	
