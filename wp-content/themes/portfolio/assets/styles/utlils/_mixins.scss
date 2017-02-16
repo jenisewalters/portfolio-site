@@ -1,67 +1,62 @@
 @mixin breakpoint($class) {
-  @if $class == xs {
-    @media (max-width: 767px) { @content; }
-  }
-
-  @else if $class == sm {
-    @media (min-width: 768px) { @content; }
-  }
-
-  @else if $class == md {
-    @media (min-width: 992px) { @content; }
-  }
-
-  @else if $class == lg {
-    @media (min-width: 1200px) { @content; }
-  }
-
-  @else {
-    @warn "Breakpoint mixin supports: xs, sm, md, lg";
-  }
+     @if $class == xs{
+        @media (max-width: 767px) {
+             @content;
+        }
+    }
+    @else if $class == sm {
+         @media (min-width: 768px){
+            @content;
+        }
+    }
+    @else if $class == md {
+         @media (min-width: 992px){
+            @content;
+        }
+    }
+    @else if $class == lg {
+         @media (min-width: 1200px){
+            @content;
+        }
+    }
+    @else {
+         @warn"Breakpoint mixin supports: xs, sm, md, lg";
+    }
 }
-
-
 @mixin element($element) {
     &__#{$element} {
         @content;
     }
 }
-
-
 @mixin modifier($modifier) {
     &--#{$modifier} {
         @content;
     }
 }
-
-
 @mixin e($element) {
-    @include element($element)  {
+     @include element($element){
         @content;
     }
 }
-
-
 @mixin m($modifier) {
-    @include modifier($modifier) {
+     @include modifier($modifier){
         @content;
     }
 }
-
 @mixin on-event($self: false) {
-    @if $self {
+     @if $self{
         &,
-        &:hover,
         &:active,
-        &:focus {
+        &:focus,
+        &:hover {
             @content;
         }
-    } @else {
-        &:hover,
+    }
+    @else {
         &:active,
-        &:focus {
+        &:focus,
+        &:hover {
             @content;
         }
     }
 }
-

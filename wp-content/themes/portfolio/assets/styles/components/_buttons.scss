@@ -7,20 +7,18 @@
 
 .btn-primary {
 	@extend .button;
-  background: $blue;
+	background: $blue;
 	padding: 10px 15px;
 	text-transform: uppercase;
 	font-size: 12px;
-  font-weight: $font-weight-bold;
-  letter-spacing: 2px;
-	
+	font-weight: $font-weight-bold;
+	letter-spacing: 2px;
 	@include on-event {
-		background: lighten ( $blue, 5% ) ;
+		background: lighten ( $blue, 5% );
 	}
-
 }
 
-.btn-label{
+.btn-label {
 	@extend .button;
 	padding: 3px 7px;
 	font-size: 12px;

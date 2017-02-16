@@ -1,28 +1,23 @@
 .hero {
-  height: 350px;
+    height: 350px;
+    @include breakpoint(sm) {
+        height: 450px;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  @include breakpoint(sm) {
-    height: 450px;
-  }
+    .hero__text {
+        position: relative;
+        color: $gray;
+        font-family: $secondary_font;
+        font-size: 30px;
+        @include breakpoint(sm) {
+            font-size: 45px;
+        }
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-
-.hero__text {
-  position: relative;
-  color: $gray;
-  font-family: $secondary_font;
-  font-size: 30px;
-
-  @include breakpoint(sm) {
-    font-size: 45px;
-  }
-
-  span {
-    color: $pink;
-  }
-}
-
+        span {
+            color: $pink;
+        }
+    }
 }
