@@ -1,5 +1,5 @@
 
-* [Portfolio Site](http://iamjenise.com)
+[Portfolio Site](http://iamjenise.com)
 
 
 
