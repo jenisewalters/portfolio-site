@@ -1,9 +1,0 @@
-.company-tile {
-	margin: $tile-spacing;
-	@include e(title) {
-		font-size: 25px;
-		font-weight: $font-weight-bold;
-		text-transform: uppercase;
-		color: $gray-medium;
-	}
-}

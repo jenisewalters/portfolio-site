@@ -1,0 +1,44 @@
+.portfolio-tile {
+  margin: 20px 10px;
+  position: relative;
+  @include e(title) {
+    font-size: 32px;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: $black;
+    margin: 10px 0 25px;
+    position: relative;
+    display: block;
+  }
+  @include e(tags) {
+    color: $light-gray;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+
+    .tags__item {
+      display: inline-block;
+
+      &:last-of-type {
+        &:after {
+          content: " ";
+        }
+      }
+
+      &:after {
+        content: "/";
+        margin-left: 5px;
+      }
+    }
+  }
+  @include e(image) {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    @include on-event() {
+      filter:none;
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+}

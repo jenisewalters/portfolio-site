@@ -1,0 +1,42 @@
+body {
+  font-family: $primary_font;
+}
+
+p {
+  font-size: $body_font_size;
+}
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  font-family: $secondary_font;
+  font-weight: $font-weight-bold;
+  color: $black;
+  position: relative;
+  @include breakpoint(sm) {
+    font-size: 35px;
+    margin-bottom: 50px;
+  }
+}
+
+a {
+  @include on-event {
+    text-decoration: none;
+  }
+}
+
+.title-border {
+  &:after {
+    content: " ";
+    position: absolute;
+    border-bottom: 2px solid $blue;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -26px;
+    right: 0;
+    text-align: center;
+    width: 55px;
+  }
+}

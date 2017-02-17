@@ -1,0 +1,22 @@
+.hero {
+  height: 350px;
+  background: $black;
+  @include breakpoint(sm) {
+    height: 450px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .hero__text {
+    p {
+      position: relative;
+      color: $white;
+      font-family: $secondary_font;
+      font-size: 30px;
+      @include breakpoint(sm) {
+        font-size: 45px;
+      }
+    }
+  }
+}
