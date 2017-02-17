@@ -12,7 +12,7 @@
 
             if (get_field('resume_url')) {
               $resume_url = get_field('resume_url'); ?>
-              <a class="btn-primary" target="_blank" href="<?php echo $resume_url ?>">Download Resume</a>
+              <a class="btn-primary btn--large" target="_blank" href="<?php echo $resume_url ?>">Download Resume</a>
               <?php  } ?>
 
     </div>
@@ -25,6 +25,8 @@
   				<?php
             $args = array(
             'post_type' => array('portfolio'),
+            'orderby' => 'menu_order',
+	          'order'   => 'DESC',
             );
 
             $query = new WP_Query($args);
