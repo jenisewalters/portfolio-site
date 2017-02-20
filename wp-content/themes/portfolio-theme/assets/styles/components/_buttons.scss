@@ -15,6 +15,15 @@
 	@include on-event {
 		background-color: lighten($blue, 10%);
 	}
+
+	&.code-button {
+		margin-left: 20px;
+
+		.fa-github {
+			font-size: 30px;
+			margin-right: 10px;
+		}
+	}
 }
 
 .btn--large {

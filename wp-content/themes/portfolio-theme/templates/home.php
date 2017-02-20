@@ -13,7 +13,11 @@
             if (get_field('resume_url')) {
               $resume_url = get_field('resume_url'); ?>
               <a class="btn-primary btn--large" target="_blank" href="<?php echo $resume_url ?>">Download Resume</a>
-              <?php  } ?>
+              <?php  }
+
+              if (get_field('github_url')) {
+                $resume_url = get_field('resume_url'); ?>
+                  <a class="btn-primary btn--large code-button" target="_blank" href="<?php echo $github_url ?>"><i class="fa fa-github"></i>View Source Code</a>
 
     </div>
   </div>
@@ -24,9 +28,7 @@
 		  <div class="row">
   				<?php
             $args = array(
-            'post_type' => array('portfolio'),
-            'orderby' => 'menu_order',
-	          'order'   => 'DESC',
+            'post_type' => array('portfolio')
             );
 
             $query = new WP_Query($args);

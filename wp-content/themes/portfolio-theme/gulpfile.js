@@ -267,6 +267,12 @@ gulp.task('watch', function() {
   gulp.watch(['bower.json', 'assets/manifest.json'], ['build']);
 });
 
+// ##Fonts
+gulp.task('fonts', function() {
+    return gulp.src([
+                    'bower_components/font-awesome/fonts/fontawesome-webfont.*'])
+            .pipe(gulp.dest('dist/fonts/'));
+});
 // ### Build
 // `gulp build` - Run all the build tasks but don't clean up beforehand.
 // Generally you should be running `gulp` instead of `gulp build`.
