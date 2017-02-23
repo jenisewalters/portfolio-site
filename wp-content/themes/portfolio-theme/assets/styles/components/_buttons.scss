@@ -17,12 +17,19 @@
 	}
 
 	&.code-button {
-		margin-left: 20px;
-
-		.fa-github {
-			font-size: 30px;
-			margin-right: 10px;
+		@include breakpoint(sm) {
+			margin-left: 20px;
 		}
+	}
+}
+
+.code-button,
+.resume-button {
+	margin-bottom: 10px;
+	display: block;
+	text-align: center;
+	@include breakpoint(sm) {
+		display: inline-block;
 	}
 }
 

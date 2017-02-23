@@ -61,7 +61,7 @@ class Custom_Post_Type
                 'label'                 => $plural,
                 'labels'                => $labels,
                 'public'                => true,
-                'supports'              => array( 'title', 'editor', 'thumbnail' ),
+                'supports'              => array( 'title', 'editor', 'thumbnail', 'page-attributes' ),
                 'show_in_nav_menus'     => true,
 								'taxonomies' => array('post_tag')
             ),
@@ -98,7 +98,7 @@ class Custom_Post_Type
 	{
 				return ucwords( str_replace( '_', ' ', $string ) );
 	}
- 
+
 	public static function uglify( $string )
 	{
 				return strtolower( str_replace( ' ', '_', $string ) );

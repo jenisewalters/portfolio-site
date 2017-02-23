@@ -2,7 +2,7 @@
   height: 450px;
   background: $black;
   @include breakpoint(sm) {
-    height: 550px;
+    height: 350px;
   }
   display: flex;
   align-items: center;
@@ -16,7 +16,7 @@
       font-size: 30px;
       margin-bottom: 40px;
       @include breakpoint(sm) {
-        font-size: 45px;
+        font-size: 35px;
       }
     }
   }

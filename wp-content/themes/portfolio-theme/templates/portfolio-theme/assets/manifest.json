@@ -22,6 +22,6 @@
     }
   },
   "config": {
-    "devUrl": "http://localhost/localwp.com/"
+    "devUrl": "http://localhost/portfolio-site"
   }
 }
