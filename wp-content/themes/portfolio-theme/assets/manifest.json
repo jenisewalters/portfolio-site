@@ -22,6 +22,6 @@
     }
   },
   "config": {
-    "devUrl": "http://localhost/portfolio-site/"
+    "devUrl": "http://localhost:8888/portfolio-site/"
   }
 }

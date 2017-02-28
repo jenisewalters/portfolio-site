@@ -28,6 +28,10 @@
 	margin-bottom: 10px;
 	display: block;
 	text-align: center;
+
+	.fa {
+		margin-right: 10px;
+	}
 	@include breakpoint(sm) {
 		display: inline-block;
 	}

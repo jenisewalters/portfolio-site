@@ -13,14 +13,14 @@
             if (get_field('resume_url')) {
                 $resume_url = get_field('resume_url');
                 ?>
-                <a class="btn-primary btn--large resume-button" target="_blank" href="<?php echo $resume_url ?>">Download Resume</a>
+                <a class="btn-primary btn--large resume-button" target="_blank" href="<?php echo $resume_url ?>"><i class="fa fa-download"></i>Download Resume</a>
 
             <?php }
 
                  if (get_field('github_url')) {
                   $github_url = get_field('github_url');
                   ?>
-                  <a class="btn-primary btn--large code-button" target="_blank" href="<?php echo $github_url ?>">View Source Code</a>
+                  <a class="btn-primary btn--large code-button" target="_blank" href="<?php echo $github_url ?>"><i class="fa fa-github"></i>View Source Code</a>
               <?php
             } ?>
     </div>
@@ -40,15 +40,9 @@
             $query = new WP_Query($args);
 
           ?>
-          <div class="flexbox-container">
-
+          <div class="flexbox-container row">
 
 					<?php while ($query->have_posts()) : $query->the_post(); ?>
-
-
-
-
-
 
 							<div class="portfolio-tile">
                 <?php if (get_field('work_sample_url')) {
