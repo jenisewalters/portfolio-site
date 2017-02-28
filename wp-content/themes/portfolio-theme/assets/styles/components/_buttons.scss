@@ -30,7 +30,11 @@
 	text-align: center;
 
 	.fa {
-		margin-right: 10px;
+		&.fa-download,
+		&.fa-github {
+			margin-right: 10px;
+			font-size: 20px;
+		}
 	}
 	@include breakpoint(sm) {
 		display: inline-block;

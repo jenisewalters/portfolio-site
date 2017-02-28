@@ -40,7 +40,7 @@
             $query = new WP_Query($args);
 
           ?>
-          <div class="flexbox-container row">
+          <div class="portfolio-container row">
 
 					<?php while ($query->have_posts()) : $query->the_post(); ?>
 
